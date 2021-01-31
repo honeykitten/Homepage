@@ -1,0 +1,3 @@
+cd C:\Users\gmtae\PycharmProjects\blog
+. "C:\Users\gmtae\PycharmProjects\blog\venv\Scripts\Activate.ps1"
+aws s3 sync . s3://qtae-blog --acl "public-read" --exclude "*" --include "css/*" --include "images/*" --include "js/*" --include "twitter/*" --include "apple-touch-icon.png" --include "apple-touch-icon-57x57.png" --include "apple-touch-icon-72x72.png" --include "apple-touch-icon-114x114.png" --include "apple-touch-icon-144x144.png" --include "apple-touch-icon-precomposed.png" --include "favicon.ico" --include "index.html"
